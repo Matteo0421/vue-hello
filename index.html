@@ -25,9 +25,22 @@
   <div id="app">
 
     <h1>{{ messaggio }}</h1>
+
     <div>
       <img :src="img" alt="Immagine" class="w-75 "/>
     </div>
+
+    <div>
+      <span>Nome : {{lista[0].alunno}} <br></span>
+      <span>Età : {{lista[0].eta}} <br></span>
+      <span>Sesso : {{lista[0].sesso}} <br></span>
+    </div>
+
+    <div>
+      Ciao mi chiamo {{lista[1].alunno}}, ho {{lista[1].eta}}
+    </div>
+
+    <h2>{{orologio}}</h2>
 
   </div>
 
