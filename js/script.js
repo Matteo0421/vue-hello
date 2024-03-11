@@ -34,6 +34,8 @@ createApp({
       ],
 
       ora: '',
+
+      isOpaca: false,
     }
 
     
@@ -48,11 +50,22 @@ createApp({
       const minuto = d.getMinutes() < 10 ? '0'+ d.getMinutes() : d.getMinutes();
       const secondo = d.getSeconds() < 10 ? '0'+ d.getSeconds() : d.getHours();
       this.ora=`${ora} : ${minuto} : ${secondo}`
+    },
+
+    aggiornaOra(){
+      setInterval(() =>{
+        this.orologio()
+      },1000)
+    },
+
+    opacity(){
+
     }
   },
 
   mounted(){
     this.orologio();
+    this.aggiornaOra();
   }
 
 }).mount('#app');
