@@ -7,6 +7,9 @@ createApp({
   data(){
     return{
 
+      messaggio: 'Ciaoooo, primo giorno con Vue.jssss',
+      img: './img/01.webp',
+
     }
   },
 
