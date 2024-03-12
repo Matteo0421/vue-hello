@@ -48,7 +48,7 @@ createApp({
       const d = new Date();
       const ora = d.getHours() < 10 ? '0'+ d.getHours() : d.getHours();
       const minuto = d.getMinutes() < 10 ? '0'+ d.getMinutes() : d.getMinutes();
-      const secondo = d.getSeconds() < 10 ? '0'+ d.getSeconds() : d.getHours();
+      const secondo = d.getSeconds() < 10 ? '0'+ d.getSeconds() : d.getSeconds();
       this.ora=`${ora} : ${minuto} : ${secondo}`
     },
 
